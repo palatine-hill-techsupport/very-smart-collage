@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smartest Guys in the Room</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+            position: relative;
+        }
+
+        .collage-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Ensure it's behind the SVG */
+            overflow: hidden;
+        }
+
+        .collage-container img {
+            position: absolute; /* Enable random placement */
+            width: 33%;
+            height: auto;
+            object-fit: cover;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.5s ease; /* Smooth fade effect */
+        }
+
+        svg {
+            width: 70%; /* Adjust as needed */
+            height: auto;
+            z-index: 1; /* Place SVG above the collage */
+            position: relative;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Add drop shadow to the line */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            padding: 5px 10px;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            border-radius: 5px;
+            z-index: 2; /* Ensure it stays above other content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="collage-container">
+        <!-- image paths -->
+        <img src="enron_news (1).png" alt="Collage image 1">
+        <img src="enron_news (2).png" alt="Collage image 2">
+        <img src="enron_news (3).png" alt="Collage image 3">
+        <img src="enron_news (4).png" alt="Collage image 4">
+        <img src="enron_news (5).png" alt="Collage image 5">
+        <img src="enron_news (6).png" alt="Collage image 6">
+        <img src="enron_news (7).png" alt="Collage image 7">
+        <img src="enron_news (8).png" alt="Collage image 8">
+        <img src="enron_news (9).png" alt="Collage image 9">
+        <img src="enron_news (10).png" alt="Collage image 10">
+        <img src="enron_news (11).png" alt="Collage image 11">
+        <img src="enron_news (12).png" alt="Collage image 12">
+        <img src="enron_news (13).png" alt="Collage image 13">
+        <img src="enron_news (14).png" alt="Collage image 14">
+        <img src="enron_news (15).png" alt="Collage image 15">
+        <img src="enron_news (16).png" alt="Collage image 16">
+        <img src="enron_news (17).png" alt="Collage image 17">
+        <img src="enron_news (18).png" alt="Collage image 18">
+        <img src="enron_news (19).png" alt="Collage image 19">
+        <img src="enron_news (20).png" alt="Collage image 20">
+        <img src="enron_news (21).png" alt="Collage image 21">
+        <img src="enron_news (22).png" alt="Collage image 22">
+        <img src="enron_news (23).png" alt="Collage image 23">
+        <img src="enron_news (24).png" alt="Collage image 24">
+        <img src="enron_news (25).png" alt="Collage image 25">
+        <img src="enron_news (26).png" alt="Collage image 26">
+        <img src="enron_news (27).png" alt="Collage image 27">
+        <img src="enron_news (28).png" alt="Collage image 28">
+        <img src="enron_news (29).png" alt="Collage image 29">
+        <img src="enron_news (30).png" alt="Collage image 30">
+        <img src="enron_news (31).png" alt="Collage image 31">
+        <img src="enron_news (32).png" alt="Collage image 32">
+        <img src="enron_news (33).png" alt="Collage image 33">
+        <img src="enron_news (34).png" alt="Collage image 34">
+        <img src="enron_news (35).png" alt="Collage image 35">
+        <img src="enron_news (36).png" alt="Collage image 36">
+        <img src="enron_news (37).png" alt="Collage image 37">
+        <img src="enron_news (38).png" alt="Collage image 38">
+        <img src="enron_news (39).png" alt="Collage image 39">
+        <img src="enron_news (40).png" alt="Collage image 40">
+        <img src="enron_news (41).png" alt="Collage image 41">
+        <img src="enron_news (42).png" alt="Collage image 42">
+        <img src="enron_news (43).png" alt="Collage image 43">
+        <img src="enron_news (44).png" alt="Collage image 44">
+        <img src="enron_news (45).png" alt="Collage image 45">
+        <img src="enron_news (46).png" alt="Collage image 46">
+        <img src="enron_news (47).png" alt="Collage image 47">
+        <img src="enron_news (48).png" alt="Collage image 48">
+        <img src="enron_news (49).png" alt="Collage image 49">
+        <img src="enron_news (50).png" alt="Collage image 50">
+        <img src="enron_news (51).png" alt="Collage image 51">
+        <img src="enron_news (52).png" alt="Collage image 52">
+        <img src="enron_news (53).png" alt="Collage image 53">
+        <img src="enron_news (54).png" alt="Collage image 54">
+        <img src="enron_news (55).png" alt="Collage image 55">
+        <img src="enron_news (56).png" alt="Collage image 56">
+        <img src="enron_news (57).png" alt="Collage image 57">
+        <img src="enron_news (58).png" alt="Collage image 58">
+        <img src="enron_news (59).png" alt="Collage image 59">
+        <img src="enron_news (60).png" alt="Collage image 60">
+        <img src="enron_news (61).png" alt="Collage image 61">
+        <img src="enron_news (62).png" alt="Collage image 62">
+        <img src="enron_news (63).png" alt="Collage image 63">
+        <img src="enron_news (64).png" alt="Collage image 64">
+        <img src="enron_news (65).png" alt="Collage image 65">
+        <img src="enron_news (66).png" alt="Collage image 66">
+        <img src="enron_news (67).png" alt="Collage image 67">
+        <img src="enron_news (68).png" alt="Collage image 68">
+        <img src="enron_news (69).png" alt="Collage image 69">
+        <img src="enron_news (70).png" alt="Collage image 70">
+        <img src="enron_news (71).png" alt="Collage image 71">
+        <img src="enron_news (72).png" alt="Collage image 72">
+    </div>
+
+    <svg id="pricechart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" style="z-index: 1; position: relative;">
+        <path id="sparkline" d="M60,440 L65,442 L71,442 L77,443 L83,441 L88,441 L94,441 L100,443 L105,441 L111,439 L117,440 L123,442 L129,443 L134,441 L139,441 L145,441 L151,439 L157,440 L163,438 L168,436 L174,434 L180,432 L186,432 L192,433 L197,437 L203,434 L209,432 L214,432 L220,426 L226,426 L232,422 L237,420 L243,418 L249,418 L255,421 L260,421 L266,418 L271,410 L277,406 L283,411 L288,410 L294,400 L300,401 L306,397 L312,396 L317,398 L323,404 L329,409 L335,400 L340,402 L346,405 L352,407 L358,405 L363,401 L369,402 L375,405 L380,406 L386,401 L392,413 L398,405 L404,408 L409,400 L415,400 L420,398 L426,392 L432,395 L438,396 L444,399 L449,399 L455,397 L461,390 L466,389 L472,391 L478,392 L483,392 L489,384 L495,385 L500,383 L507,386 L512,385 L518,383 L524,371 L529,372 L535,378 L541,382 L546,385 L552,389 L558,390 L564,383 L569,383 L575,389 L581,388 L587,388 L593,389 L598,388 L604,382 L610,382 L615,370 L621,371 L627,365 L632,363 L638,355 L644,357 L650,380 L655,356 L661,357 L667,358 L673,348 L678,329 L683,331 L690,333 L695,309 L701,317 L707,295 L712,287 L718,291 L724,294 L730,299 L736,307 L741,280 L747,178 L753,175 L759,148 L764,171 L770,157 L776,193 L782,154 L787,105 L793,93 L799,117 L804,192 L810,113 L816,126 L821,176 L827,221 L833,201 L839,243 L844,259 L850,276 L856,320 L861,354 L868,411 L873,470 L879,469 L879,1000 L879,2000 L879,3000 L879,4000" fill="none" stroke="red" stroke-width="8"></path>
+    </svg>
+
+    <footer>
+        McLean, B., & Elkind, P. (2003). The smartest guys in the room: The amazing rise and scandalous fall of Enron. Portfolio.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('.collage-container img');
+            const imagesPerGroup = 35; // Number of images to show at once
+            let currentIndex = 0;
+
+            // Randomize placement and rotation for all images
+            images.forEach((img) => {
+                const containerWidth = document.querySelector('.collage-container').offsetWidth;
+                const containerHeight = document.querySelector('.collage-container').offsetHeight;
+
+                const randomX = Math.random() * containerWidth - img.offsetWidth / 2;
+                const randomY = Math.random() * containerHeight - img.offsetHeight / 2;
+                const randomRotation = Math.random() * 360;
+
+                img.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${randomRotation}deg)`;
+                img.style.position = 'absolute';
+            });
+
+            // Function to rotate and cycle images
+            function rotateImageGroup() {
+                if (images.length === 0) {
+                    console.error('No images found in the collage-container.');
+                    return;
+                }
+
+                // Hide all images
+                images.forEach((img) => {
+                    img.style.opacity = '0'; // Fade out
+                });
+
+                // Show the current group of images
+                for (let i = 0; i < imagesPerGroup; i++) {
+                    const index = (currentIndex + i) % images.length;
+                    images[index].style.opacity = '1'; // Fade in
+                }
+
+                // Move to the next group
+                currentIndex = (currentIndex + imagesPerGroup) % images.length;
+            }
+
+            // Initialize rotation
+            setInterval(rotateImageGroup, 5000); // Rotate every 3 seconds
+            rotateImageGroup(); // Start cycling immediately
+
+            // SVG animation for the sparkline
+            const sparkline = document.getElementById('sparkline');
+            const totalLength = sparkline.getTotalLength();
+
+            sparkline.style.strokeDasharray = totalLength;
+            sparkline.style.strokeDashoffset = totalLength;
+
+            function animateSVG() {
+                let progress = 0;
+                const animationDuration = 800000; // Duration in milliseconds
+                const frameRate = 60;
+                const totalFrames = (animationDuration / 1000) * frameRate;
+
+                function animate() {
+                    progress++;
+                    const progressRatio = progress / totalFrames;
+                    sparkline.style.strokeDashoffset = totalLength * (1 - progressRatio);
+
+                    if (progress < totalFrames) {
+                        requestAnimationFrame(animate);
+                    }
+                }
+
+                animate();
+            }
+
+            animateSVG();
+        });
+    </script>
+
+</body>
+</html>
